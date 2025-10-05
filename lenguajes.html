@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferencias de Lenguajes</title>
+</head>
+<body>
+    <header>
+        <h1>Preferencias de Lenguajes de Programación</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro Boletín</a></li>
+                <li><a href="lenguajes.html">Preferencias Lenguajes</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="foto">Foto de perfil:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+            
+            <fieldset>
+                <legend>¿Qué lenguajes conoces?</legend>
+                <label>
+                    <input type="checkbox" name="lenguajes" value="HTML">
+                    HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="lenguajes" value="CSS">
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="lenguajes" value="JavaScript">
+                    JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="lenguajes" value="Python">
+                    Python
+                </label>
+                <label>
+                    <input type="checkbox" name="lenguajes" value="Java">
+                    Java
+                </label>
+            </fieldset>
+            
+            <div>
+                <label for="horas">¿Cuántas horas de programación estudias al día?</label>
+                <input type="number" id="horas" name="horas" min="0" max="24" step="0.5">
+            </div>
+            
+            <div>
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
