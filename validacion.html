@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Validación</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Validación</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro Boletín</a></li>
+                <li><a href="lenguajes.html">Preferencias Lenguajes</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="#" method="post" id="formValidacion">
+            <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" 
+                       placeholder="usuario@ejemplo.com" required>
+            </div>
+            
+            <div>
+                <label for="contrasena">Contraseña (6-12 caracteres):</label>
+                <input type="password" id="contrasena" name="contraseña" 
+                       placeholder="Mínimo 6 caracteres" 
+                       pattern="[0-9]{4}"
+                       minlength="6" maxlength="12" 
+                       title="contraseña"
+                       required>
+            </div>
+            
+            <div>
+                <label for="confirmar">Confirmar contraseña:</label>
+                <input type="password" id="confirmar" name="confirmar" 
+                       placeholder="Repite tu contraseña" required>
+                <div id="errorConfirmar" class="error">Las contraseñas no coinciden</div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
